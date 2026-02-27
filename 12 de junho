@@ -1,44 +1,71 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Nosso Site ❤️</title>
-  <link rel="stylesheet" href="style.css">
+<title>Presente</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Meddon&family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<header>
-  Nosso Amor 💖
-</header>
+<div class="desktop">
 
-<section>
-  <h2>Mensagem</h2>
-  <p>
-    Aqui vai sua mensagem romântica personalizada.
-  </p>
-</section>
+<!-- mensagem inicial -->
+<div class="popup" id="popup">
+<p>Não é erro, é seu presente. Feliz dia das namoradas!</p>
+<button onclick="fecharPopup()">OK</button>
+</div>
 
-<section>
-  <h2>Vídeo especial 🎥</h2>
-  <video controls width="300">
-    <source src="videos/video.mp4">
-  </video>
-</section>
+<!-- ícones -->
+<div class="icone" onclick="abrirJanela('lixeira')">🗑️<span>Lixeira</span></div>
+<div class="icone" onclick="abrirJanela('msn')">💬<span>MSN</span></div>
+<div class="icone" onclick="abrirJanela('player')">🎵<span>Media Player</span></div>
+<div class="icone" onclick="abrirJanela('retro')">📁<span>Retrospectiva</span></div>
+<div class="icone">🌐<span>Internet</span></div>
 
-<section>
-  <h2>Nossa música 🎶</h2>
-  <audio controls>
-    <source src="audios/musica.mp3">
-  </audio>
-</section>
-<section>
-  <h2>Um mimo especial para a pessoa mais especial da minha vida. Boa sorte!</h2>
+<!-- janelas -->
+<div class="janela" id="lixeira">
+<h2>Lixeira</h2>
+<p>Você achou um presente escondido aqui.</p>
+<button onclick="fecharJanela('lixeira')">Fechar</button>
+</div>
 
-  <div class="raspadinha">
-    <canvas id="canvas"></canvas>
+<div class="janela" id="msn">
+<h2>MSN</h2>
+<img src="imagens/foto.jpg" width="250">
+<button onclick="fecharJanela('msn')">Fechar</button>
+</div>
 
-    <div class="premio">
-      SURPRESA: UM LEGO PRA VOCE
-    </div>
-  </div>
-</section>
+<div class="janela" id="player">
+<h2>Media Player</h2>
+<audio controls>
+<source src="audios/musica.mp3">
+</audio>
+<button onclick="fecharJanela('player')">Fechar</button>
+</div>
+
+<div class="janela" id="retro">
+<h2>Retrospectiva</h2>
+<p>Nossa história...</p>
+<video width="250" controls>
+<source src="videos/video.mp4">
+</video>
+<button onclick="fecharJanela('retro')">Fechar</button>
+</div>
+
+</div>
+
+<!-- barra iniciar -->
+<div class="barra">
+<button>Textos</button>
+<button>Fotos</button>
+<button>Vídeos</button>
+<button>Jogos</button>
+<button>Paint</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
