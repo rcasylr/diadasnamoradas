@@ -1,1 +1,11 @@
-script.js
+function abrirJanela(id){
+document.getElementById(id).style.display="block";
+}
+
+function fecharJanela(id){
+document.getElementById(id).style.display="none";
+}
+
+function fecharPopup(){
+document.getElementById("popup").style.display="none";
+}
