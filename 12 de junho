@@ -31,8 +31,14 @@
     <source src="audios/musica.mp3">
   </audio>
 </section>
+<section>
+  <h2>Um mimo especial para a pessoa mais especial da minha vida. Boa sorte!</h2>
 
-<script src="script.js"></script>
+  <div class="raspadinha">
+    <canvas id="canvas"></canvas>
 
-</body>
-</html>
+    <div class="premio">
+      SURPRESA: UM LEGO PRA VOCE
+    </div>
+  </div>
+</section>
