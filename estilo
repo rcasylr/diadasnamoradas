@@ -1,1 +1,39 @@
 style.css
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(#ffdde1, #ee9ca7);
+  text-align: center;
+  color: #fff;
+}
+
+header {
+  padding: 60px 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+section {
+  background: rgba(255,255,255,0.15);
+  margin: 30px;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+h2 {
+  color: #fff;
+}
+
+button {
+  background: white;
+  color: #ee9ca7;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 30px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
